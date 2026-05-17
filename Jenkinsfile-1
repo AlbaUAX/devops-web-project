@@ -8,7 +8,7 @@ pipeline {
         maven 'maven-3.9.6'
     }
     environment {
-        DOCKERHUB_CREDENTIALS = credentials(cedd1495-eae1-404a-8346-a0652e6d9ed6)
+        DOCKERHUB_CREDENTIALS = credentials('devops-dockerhub-token')
     }
     stages {
         stage('Packaging') {
